@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Only For You 💖</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+
+<!-- INTRO SCREEN -->
+<div id="intro" class="intro fade-in">
+  <h1>Hi you 🌸</h1>
+  <p>This little world is only for you</p>
+  <button onclick="enterSite()">Enter 💗</button>
+</div>
+
+<!-- MAIN CONTENT -->
+<div id="main" class="hidden">
+
+  <div class="card fade-in">
+    <h1>Happy Birthday 🎂</h1>
+    <p class="sub">To my favourite human 💕</p>
+
+    <p class="msg typewriter" id="mainMsg"></p>
+
+    <p class="countdown" id="countdown"></p>
+
+    <button onclick="playMusic()">Play music 🎵</button>
+    <button onclick="showLove()">Tap gently 💌</button>
+
+    <p id="surprise" class="fade-text"></p>
+  </div>
+
+  <!-- STORY GAME -->
+  <div class="story-game fade-in">
+    <h2>Guess Our Story 💌</h2>
+
+    <p id="question"></p>
+
+    <div class="options">
+      <button onclick="choose(0)"></button>
+      <button onclick="choose(1)"></button>
+    </div>
+
+    <p class="story-msg fade-text" id="storyMsg"></p>
+  </div>
+
+</div>
+
+<!-- FLOATING HEARTS -->
+<div class="hearts"></div>
+
+<!-- MUSIC -->
+<audio id="bgMusic" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
+
